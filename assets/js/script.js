@@ -86,6 +86,8 @@ function getWeather(input) {
     });
 }
 
+
+// function to save searched cities in local storage
 function saveLastCity() {
     localStorageLength = localStorage.length;
     localStorage.setItem(localStorageLength, JSON.stringify(cityInput.val()));
