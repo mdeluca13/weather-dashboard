@@ -64,6 +64,8 @@ function getWeather(input) {
             return response.json();
         })
         .then(function (data) {
+            var filteredData = data.filter('12:00:00')
+            console.log(filteredData)
             for (i = 0; i < 5; i++) {
                 $('#day-' + (i+1) + '-date').text(data.list[i].dt_txt);
                 $('#day-' + (i+1) + '-icon').attr('src', 'https://openweathermap.org/img/wn/' + data.list[i].weather[0].icon + '.png');
