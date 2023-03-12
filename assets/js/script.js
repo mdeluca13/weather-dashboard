@@ -41,7 +41,7 @@ $('.prev-search').click(function() {
 function getWeather(input) {
 
     //fetching lat and long for weather search
-    fetch('http://api.openweathermap.org/geo/1.0/direct?q=' + input + '&limit=1&appid=8e6644460f79289a6c57818a06a12a8d')
+    fetch('https://api.openweathermap.org/geo/1.0/direct?q=' + input + '&limit=1&appid=8e6644460f79289a6c57818a06a12a8d')
 
     .then (function (response) {
         return response.json();
