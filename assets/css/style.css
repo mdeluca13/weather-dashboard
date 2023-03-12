@@ -1,0 +1,11 @@
+.btn {
+    width: 100%;
+}
+
+h2, .form-control, .btn {
+    margin: 5px;
+}
+
+#day-forecast h3, #day-forecast p {
+    margin: 5px;
+}
