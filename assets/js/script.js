@@ -33,6 +33,7 @@ searchBtn.on('click', function () {
 
 //click listener on previous searches to search that city
 $('.prev-search').click(function() {
+    console.log('click');
     getWeather($(this).text());
     console.log($(this).text());
 })
